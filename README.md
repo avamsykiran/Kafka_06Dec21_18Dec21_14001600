@@ -48,7 +48,7 @@ Kafak
                 Interactions
                 Dynamic Scalability be in sink with the interactivity.
                 Log / Req Tracing
-                Handle Distrbuted Events        CQRS
+                Handle Distrbuted Transactions        CQRS / Saga
 
     Message Systems
     ============================================================================
@@ -82,7 +82,8 @@ Kafak
                 Producer  ----MSG ---->> [MSG SYS] ---MSG--->> CONSUMER  
                                 (half - duplex)
 
-            Publish - Subscribe 
+            Publish - Subscribe  / Broadcasting Systems
+            
                                                      ---MSG--->> CONSUMER 
                                                      ---MSG--->> CONSUMER 
                   Producer  ----MSG ---->> [MSG SYS] ---MSG--->> CONSUMER
@@ -227,7 +228,7 @@ Kafak
         Consumer API        api for a consumer to interact with Kafka
         Stream API          api allows the processing of the vents received on kafka,
         Connector API       api can interact with an underlying perssitant api
-                            to act like an auotmatic producer or consumer.
+                            to act like an automatic producer or consumer.
 
     Kafka CLI
     =================================================================================
