@@ -257,6 +257,19 @@ Kafak
 
     Working with Kafka on Java
     ===========================================================================
+
+        <dependency>
+			<groupId>org.apache.kafka</groupId>
+			<artifactId>kafka-clients</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.30</version>
+			<scope>test</scope>
+		</dependency>
+
         refer to ./WS foldwer
 
     Spring Kafka
