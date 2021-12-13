@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 
 import org.apache.kafka.common.serialization.Serializer;
 
-import com.cts.kafkademo.cp.model.PersistenceEvent;
+import com.cts.kafkademo.model.PersistenceEvent;
 
 public class PersistenceEventSerializer implements Serializer<PersistenceEvent> {
 

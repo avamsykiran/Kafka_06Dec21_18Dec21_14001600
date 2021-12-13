@@ -8,8 +8,8 @@ import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
 
-import com.cts.kafkademo.cp.model.PersistenceEvent;
 import com.cts.kafkademo.cp.util.PersistenceEventSerializer;
+import com.cts.kafkademo.model.PersistenceEvent;
 
 public class ConsoleProducerWithKeyAndObjectAsMessage {
 
@@ -33,7 +33,7 @@ public class ConsoleProducerWithKeyAndObjectAsMessage {
 		while(shallContinue) {
 			PersistenceEvent pe = new PersistenceEvent();
 			System.out.print("key: ");
-			String key = scan.nextLine();
+			String key = scan.next();
 			System.out.print("RecordId: ");
 			pe.setRecordId(scan.nextInt());
 			System.out.print("Operation: ");

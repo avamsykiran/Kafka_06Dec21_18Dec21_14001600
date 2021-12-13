@@ -1,4 +1,4 @@
-package com.cts.kafkademo.cp.model;
+package com.cts.kafkademo.model;
 
 import java.io.Serializable;
 
@@ -41,6 +41,11 @@ public class PersistenceEvent implements Serializable{
 
 	public void setStatus(String status) {
 		this.status = status;
+	}
+
+	@Override
+	public String toString() {
+		return "PersistenceEvent [recordId=" + recordId + ", operation=" + operation + ", status=" + status + "]";
 	}
 	
 	
